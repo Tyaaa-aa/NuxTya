@@ -30,6 +30,8 @@ Look at the [Nuxt 3 documentation](https://nuxt.com/docs/getting-started/introdu
 
 ## Setup
 
+Get your [Supabase](https://supabase.com/docs/guides/getting-started/quickstarts/nuxtjs) Key and URL and put them in the .env file
+
 Make sure to install the dependencies:
 
 ```
