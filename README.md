@@ -2,7 +2,7 @@
 # NuxTya
 
 ### A no-nonsense minimal starter template for Nuxt 3 that prioritizes a clean and customizable base for your projects.
-[![Features](https://skillicons.dev/icons?i=nuxt,pinia,typescript,tailwind,supabase,bun)](https://skillicons.dev)
+[![Features](https://skillicons.dev/icons?i=nuxt,pinia,typescript,tailwind,supabase,bun)](https://nuxtya.tya.design/)
 
 ## Features 
 
