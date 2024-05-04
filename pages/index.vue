@@ -5,9 +5,16 @@
 	const toggleColorMode = () => (colorMode.preference = colorMode.preference === "dark" ? "light" : "dark");
 	const title = ref<NuxtTya>({ msg: "NuxTya" }); // Global interface and types can be found in the types folder
 	const { data: serverMsg, error, pending } = await useFetch("/api/hello"); // Fetch data from the server
+	const { data: supabaseData, error: supabaseError} = await useFetch("/api/database") // Fetch data from the database
 	onMounted(() => {
 		if (error.value) {
 			title.value = { msg: "Error" };
+		}
+		if (supabaseError.value) {
+			console.error(supabaseError.value);
+		}
+		if (supabaseData.value) {
+			console.log(supabaseData.value);
 		}
 	});
 </script>
@@ -52,6 +59,11 @@
 					<span class="text-2xl">Count: {{ store.count }}</span>
 					<span class="text-2xl">Double:{{ store.doubleCount }}</span>
 				</div>
+			</div>
+			<!-- Display data from Supabase -->
+			<h2 class="text-2xl m-5 font-bold">Supabase</h2>
+			<div class="text-center m-5 overflow-y-auto overflow-x-hidden max-w-[500px] max-h-[300px]">
+				{{ supabaseData }}
 			</div>
 		</div>
 	</main>
