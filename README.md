@@ -10,6 +10,7 @@
 -   **🍍 Pinia Store:** Lightweight state management solution. 
 -   **⌨️ TypeScript:** Enables type safety and improved development experience.
 -   **💨 Tailwind:** Provides a utility-first CSS framework for rapid styling.
+-   **🛡️ Nuxt-Security:** Automatically configure your app to follow OWASP security patterns and principles.
 -   **💾 Supabase (optional):** Supabase is an open source Firebase alternative. (See the supabase branch)
 
 ## Getting Started
