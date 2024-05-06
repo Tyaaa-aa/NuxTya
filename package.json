@@ -1,6 +1,6 @@
 {
   "name": "nuxtya",
-	"description": "A Nuxt 3 starter template with TypeScript, Tailwind CSS, Shadcn-vue and Pinia.",
+  "description": "A Nuxt 3 starter template with TypeScript, Tailwind CSS, Shadcn-vue and Pinia.",
   "private": true,
   "type": "module",
   "scripts": {
@@ -17,6 +17,7 @@
     "clsx": "^2.1.1",
     "lucide-vue-next": "^0.378.0",
     "nuxt": "^3.11.2",
+    "nuxt-security": "latest",
     "radix-vue": "^1.7.3",
     "shadcn-nuxt": "latest",
     "tailwind-merge": "^2.3.0",
