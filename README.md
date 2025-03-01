@@ -1,7 +1,7 @@
 
 # NuxTya
 
-### A no-nonsense minimal starter template for Nuxt 3 that prioritizes a clean and customizable base for your projects.
+### A no-nonsense minimal starter template for Nuxt 3 that prioritizes a clean and customizable base for your projects. Ready for 2025!
 [![Features](https://skillicons.dev/icons?i=nuxt,pinia,typescript,tailwind,supabase,bun)](https://nuxtya.tya.design/)
 
 ## Features 
@@ -92,19 +92,24 @@ bun run preview
 
 ```
 
+## Add Shadcn-vue components
+
+Build the application for production:
+
+```
+# npm
+npx shadcn-vue@latest add <COMPONENT_NAME e.g: Card>
+
+# pnpm
+pnpm dlx shadcn-vue@latest add <COMPONENT_NAME e.g: Drawer>
+
+# bun
+bunx --bun shadcn-vue@latest add <COMPONENT_NAME e.g: Slider>
+
+```
 
 Check out the [deployment documentation](https://nuxt.com/docs/getting-started/deployment) for more information on deploying your Nuxt 3 application.
 
 See the [Shadcn-vue docs](https://www.shadcn-vue.com/docs/introduction.html) to see how to use it.
-
-**[FIX 10 Jun 2024]** Currently shadcn-vue@latest is broken and does not add the components correctly for Nuxt. They end up in a folder somewhere outside your working directory. Please use v0.10.4 until this issue has been fixed by the shadcn-vue team. 
-
-***bunx*** may also not work properly, if so using ***npx*** may be preferable for adding components.
-
-Example: 
-```
-npx shadcn-vue@v0.10.4 add COMPONENT_NAME
-```
-Buttons and Tooltips are already included
 
 I hope you enjoy using NuxTya! If you have any feedback open an issue and I'll take a look.
