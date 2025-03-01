@@ -1,10 +1,11 @@
 <script setup lang="ts">
+	import { toast } from 'vue-sonner'
 	import { useCounterStore } from "@/stores/counter"; // You can make stores in the stores folder
 	const store = useCounterStore(); // Use the store
 	const colorMode = useColorMode(); // Use color mode provided by nuxt-color-mode
 	const toggleColorMode = () => (colorMode.preference = colorMode.preference === "dark" ? "light" : "dark");
 	const title = ref<NuxtTya>({ msg: "NuxTya" }); // Global interface and types can be found in the types folder
-	const { data: serverMsg, error, pending } = await useFetch("/api/hello"); // Fetch data from the server
+	const { data: serverMsg, error, status } = await useFetch("/api/hello"); // Fetch data from the server
 	onMounted(() => {
 		if (error.value) {
 			title.value = { msg: "Error" };
@@ -22,7 +23,7 @@
 			<h1 class="text-4xl font-extrabold tracking-tight lg:text-5xl mb-5">
 				{{ title.msg }}
 			</h1>
-			<h2 v-if="pending">Loading...</h2>
+			<h2 v-if="status === 'pending'">Loading...</h2>
 			<h2 v-else class="text-3xl m-5 font-bold">{{ serverMsg }}</h2>
 			<h2 class="text-2xl m-5 font-bold">Shadcn-vue & Tailwind CSS</h2>
 			<div class="text-center">
@@ -41,7 +42,7 @@
 					</Tooltip>
 				</TooltipProvider>
 				<Button class="m-1 capitalize" @click="toggleColorMode" aria-label="Toggle Dark Mode">
-					Toggle {{ colorMode.preference === "dark" ? "light" : "dark" }} Mode
+					Toggle Color Mode
 				</Button>
 			</div>
 			<h2 class="text-2xl m-5 font-bold">Pinia</h2>
@@ -53,6 +54,21 @@
 					<span class="text-2xl">Double:{{ store.doubleCount }}</span>
 				</div>
 			</div>
+			<Button
+				class="mt-5"
+				variant="outline" @click="() => {
+					toast('Event has been created', {
+						description: new Date().toLocaleString(),
+						action: {
+							label: 'Undo',
+							onClick: () => console.log('Undo'),
+						},
+					})
+				}"
+			>
+				Sonner Toast Example
+			</Button>
 		</div>
+  <Toaster />
 	</main>
 </template>
