@@ -68,6 +68,9 @@
 			>
 				Sonner Toast Example
 			</Button>
+			<div class="mt-5">
+				<p>Try visting a <a href="/oh-no" class="underline">page</a> that doesn't exist</p>
+			</div>
 		</div>
   <Toaster />
 	</main>
