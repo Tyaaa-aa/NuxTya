@@ -1,0 +1,20 @@
+<script setup lang="ts">
+useHead({
+	bodyAttrs: {
+		class: "nuxt-tya",
+	},
+	link: [{ rel: "icon", type: "image/x-icon", href: "/favicon.svg" }],
+});
+
+useSeoMeta({
+	title: "NuxTya",
+	description:
+		"A Nuxt 4 starter template with TypeScript, Tailwind CSS, Shadcn-vue and Pinia.",
+});
+</script>
+<template>
+	<div>
+		<NuxtRouteAnnouncer />
+		<NuxtPage />
+	</div>
+</template>

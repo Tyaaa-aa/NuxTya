@@ -4,4 +4,4 @@ declare global {
 	}
 }
 
-export { NuxtTya }
+export {}

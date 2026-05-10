@@ -2,16 +2,15 @@
 # NuxTya
 
 ### A no-nonsense minimal starter template for Nuxt 4 that prioritizes a clean and customizable base for your projects. Ready for 2026!
-[![Features](https://skillicons.dev/icons?i=nuxt,pinia,typescript,tailwind,supabase,bun)](https://nuxtya.tya.design/)
+[![Features](https://skillicons.dev/icons?i=nuxt,pinia,typescript,tailwind,bun)](https://nuxtya.tya.design/)
 
-## Features 
+## Features
 
--   **🖥️ Shadcn-vue:** Beautiful and accessible UI components built with Radix Vue, and Tailwind CSS.
--   **🍍 Pinia Store:** Lightweight state management solution. 
+-   **🖥️ Shadcn-vue:** Beautiful and accessible UI components built with Reka UI and Tailwind CSS v4.
+-   **🍍 Pinia Store:** Lightweight state management solution.
 -   **⌨️ TypeScript:** Enables type safety and improved development experience.
--   **💨 Tailwind:** Provides a utility-first CSS framework for rapid styling.
+-   **💨 Tailwind v4:** Utility-first CSS with CSS-native configuration and OKLCH color tokens.
 -   **🛡️ Nuxt-Security:** Automatically configure your app to follow OWASP security patterns and principles.
--   **💾 Supabase (optional):** Supabase is an open source Firebase alternative. (See the supabase branch)
 
 ## Getting Started
 
@@ -21,11 +20,10 @@ Look at the [Nuxt 4 documentation](https://nuxt.com/docs/getting-started/introdu
 
 **Here's a quick guide to get you started:**
 
-1.  **Choose your version:** If you want Supabase out of the box select the correct branch first
-2.  **Clone the repository:** Clone this repository or download the zip file.
-4.  **Install dependencies:** Run the appropriate installation command based on your package manager (npm, pnpm, yarn, or bun).
-6.  **Start the development server:** Run the development server command to start the application locally on `http://localhost:3000`.
-8.  **Customize and develop:** Remove any unwanted features or components and start building your application using Nuxt 4 functionalities.
+1.  **Clone the repository:** Clone this repository or download the zip file.
+2.  **Install dependencies:** Run `bun install`.
+3.  **Start the development server:** Run `bun run dev` to start the app locally on `http://localhost:3000`.
+4.  **Customize and develop:** Remove any unwanted features or components and start building your application.
 
 **Remember:** This is a minimal starter template. Feel free to add additional features and functionalities as needed for your project.
 
@@ -33,83 +31,40 @@ Look at the [Nuxt 4 documentation](https://nuxt.com/docs/getting-started/introdu
 
 Make sure to install the dependencies:
 
-```
-# npm
-npm install
-
-# pnpm
-pnpm install
-
-# bun
+```bash
 bun install
-
 ```
-
 
 ## Development Server
 
 Start the development server on `http://localhost:3000`:
 
-```
-# npm
-npm run dev
-
-# pnpm
-pnpm run dev
-
-# bun
+```bash
 bun run dev
-
 ```
 
 ## Production
 
 Build the application for production:
 
-```
-# npm
-npm run build
-
-# pnpm
-pnpm run build
-
-# bun
+```bash
 bun run build
-
 ```
 
-Locally preview production build:
+Locally preview the production build:
 
-```
-# npm
-npm run preview
-
-# pnpm
-pnpm run preview
-
-# bun
+```bash
 bun run preview
-
 ```
 
 ## Add Shadcn-vue components
 
-Build the application for production:
-
+```bash
+bunx --bun shadcn-vue@latest add <COMPONENT_NAME>
 ```
-# npm
-npx shadcn-vue@latest add <COMPONENT_NAME e.g: Card>
 
-# pnpm
-pnpm dlx shadcn-vue@latest add <COMPONENT_NAME e.g: Drawer>
-
-# bun
-bunx --bun shadcn-vue@latest add <COMPONENT_NAME e.g: Slider>
-
-```
+See the [Shadcn-vue docs](https://www.shadcn-vue.com/docs/introduction.html) for the full component list.
 
 Check out the [deployment documentation](https://nuxt.com/docs/getting-started/deployment) for more information on deploying your Nuxt 4 application.
-
-See the [Shadcn-vue docs](https://www.shadcn-vue.com/docs/introduction.html) to see how to use it.
 
 I hope you enjoy using NuxTya! If you have any feedback open an issue and I'll take a look.

@@ -1,18 +1,20 @@
 <script setup lang="ts">
-	import 'vue-sonner/style.css'
-	import { Toaster } from '@/components/ui/sonner'
-	import { toast } from 'vue-sonner'
-	import { useCounterStore } from "@/stores/counter"; // You can make stores in the stores folder
-	const store = useCounterStore(); // Use the store
-	const colorMode = useColorMode(); // Use color mode provided by nuxt-color-mode
-	const toggleColorMode = () => (colorMode.preference = colorMode.preference === "dark" ? "light" : "dark");
-	const title = ref<NuxtTya>({ msg: "NuxTya" }); // Global interface and types can be found in the types folder
-	const { data: serverMsg, error, status } = await useFetch("/api/hello"); // Fetch data from the server
-	onMounted(() => {
-		if (error.value) {
-			title.value = { msg: "Error" };
-		}
-	});
+import 'vue-sonner/style.css'
+import { Toaster } from '@/components/ui/sonner'
+import { toast } from 'vue-sonner'
+import { useCounterStore } from "@/stores/counter"; // You can make stores in the stores folder
+import { useColorMode } from "#imports";
+
+const store = useCounterStore(); // Use the store
+const colorMode = useColorMode(); // Use color mode provided by nuxt-color-mode
+const toggleColorMode = () => (colorMode.preference = colorMode.preference === "dark" ? "light" : "dark");
+const title = ref<NuxtTya>({ msg: "NuxTya" }); // Global interface and types can be found in the types folder
+const { data: serverMsg, error, status } = await useFetch("/api/hello"); // Fetch data from the server
+onMounted(() => {
+	if (error.value) {
+		title.value = { msg: "Error" };
+	}
+});
 </script>
 <!-- This is a boilerplate to show all the features this starter template has to offer -->
 <!-- NuxTya is a minimal Nuxt 4 starter template that gets you started with the basics and sensible defaults -->
@@ -49,31 +51,32 @@
 			</div>
 			<h2 class="text-2xl m-5 font-bold">Pinia</h2>
 			<div class="text-center">
-				<Button class="m-1" variant="secondary" @click="store.increment" aria-label="Increment Count">Increment</Button>
-				<Button class="m-1" variant="outline" @click="store.decrement" aria-label="Decrement Count">Decrement</Button>
+				<Button class="m-1" variant="secondary" @click="store.increment"
+					aria-label="Increment Count">Increment</Button>
+				<Button class="m-1" variant="outline" @click="store.decrement"
+					aria-label="Decrement Count">Decrement</Button>
 				<div class="flex flex-col">
 					<span class="text-2xl">Count: {{ store.count }}</span>
 					<span class="text-2xl">Double:{{ store.doubleCount }}</span>
 				</div>
 			</div>
-			<Button
-				class="mt-5"
-				variant="outline" @click="() => {
-					toast('Event has been created', {
-						description: new Date().toLocaleString(),
-						action: {
-							label: 'Undo',
-							onClick: () => console.log('Undo'),
-						},
-					})
-				}"
-			>
+			<Button class="mt-5" variant="outline" @click="() => {
+				toast('Event has been created', {
+					description: new Date().toLocaleString(),
+					action: {
+						label: 'Undo',
+						onClick: () => console.log('Undo'),
+					},
+				})
+			}">
 				Sonner Toast Example
 			</Button>
 			<div class="mt-5">
-				<p>Try visting a <a href="/oh-no" class="underline">page</a> that doesn't exist</p>
+				<p>
+					Try visting a <a href="/oh-no" class="underline">page</a> that doesn't exist
+				</p>
 			</div>
 		</div>
-  <Toaster />
+		<Toaster />
 	</main>
 </template>

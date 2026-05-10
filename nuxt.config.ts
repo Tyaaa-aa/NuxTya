@@ -1,3 +1,5 @@
+import tailwindcss from "@tailwindcss/vite"
+
 // https://nuxt.com/docs/api/configuration/nuxt-config
 export default defineNuxtConfig({
   devtools: {
@@ -10,15 +12,16 @@ export default defineNuxtConfig({
 
   modules: [
     "nuxt-security",
-    "@nuxtjs/tailwindcss",
     "shadcn-nuxt",
     "@nuxtjs/color-mode",
     "@pinia/nuxt",
   ],
 
+  css: ["~/assets/css/tailwind.css"],
+
   shadcn: {
     prefix: "",
-    componentDir: "./components/ui",
+    componentDir: "./app/components/ui",
   },
 
   colorMode: {
@@ -28,10 +31,16 @@ export default defineNuxtConfig({
 
   security: {
     headers: {
-      crossOriginEmbedderPolicy:
-        process.env.NODE_ENV === "development" ? "unsafe-none" : "require-corp",
+      crossOriginEmbedderPolicy: import.meta.dev ? "unsafe-none" : "require-corp",
     },
   },
 
-  compatibilityDate: "2025-05-10",
-});
+  vite: {
+    plugins: [tailwindcss()],
+    optimizeDeps: {
+      include: ["lucide-vue-next"],
+    },
+  },
+
+  compatibilityDate: "2026-05-11",
+})
