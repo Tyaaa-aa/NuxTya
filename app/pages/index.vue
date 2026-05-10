@@ -8,7 +8,7 @@ import { useColorMode } from "#imports";
 const store = useCounterStore(); // Use the store
 const colorMode = useColorMode(); // Use color mode provided by nuxt-color-mode
 const toggleColorMode = () => (colorMode.preference = colorMode.preference === "dark" ? "light" : "dark");
-const title = ref<NuxtTya>({ msg: "NuxTya" }); // Global interface and types can be found in the types folder
+const title = ref<NuxtTya>({ msg: "Hello!" }); // Global interface and types can be found in the types folder
 const { data: serverMsg, error, status } = await useFetch("/api/hello"); // Fetch data from the server
 onMounted(() => {
 	if (error.value) {

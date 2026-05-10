@@ -32,19 +32,21 @@ useHead({
 </script>
 
 <template>
-	<main class="flex flex-col items-center justify-center min-h-screen">
-		<h1 class="text-4xl font-bold text-red-500 mb-4">
-			Error {{ error?.status }} :(
-		</h1>
-		<h2 class="text-2xl mb-8">{{ error?.message }}</h2>
-		<div v-if="error?.status === 404 && error?.statusText" class="text-center">
-			<p class="text-lg">"{{ error.statusText }}" doesn't exist</p>
-		</div>
-		<div v-else class="text-center">
-			<p class="text-lg">{{ error.statusText }}</p>
-		</div>
-		<Button @click="handleError" class="m-5 underline" variant="secondary">
-			Back to Home
-		</Button>
-	</main>
+	<NuxtLayout>
+		<main class="flex flex-col items-center justify-center min-h-screen">
+			<h1 class="text-4xl font-bold text-red-500 mb-4">
+				Error {{ error?.status }} :(
+			</h1>
+			<h2 class="text-2xl mb-8">{{ error?.message }}</h2>
+			<div v-if="error?.status === 404 && error?.statusText" class="text-center">
+				<p class="text-lg">"{{ error.statusText }}" doesn't exist</p>
+			</div>
+			<div v-else class="text-center">
+				<p class="text-lg">{{ error.statusText }}</p>
+			</div>
+			<Button @click="handleError" class="m-5 underline" variant="secondary">
+				Back to Home
+			</Button>
+		</main>
+	</NuxtLayout>
 </template>
