@@ -1,7 +1,7 @@
 
 # NuxTya
 
-### A no-nonsense minimal starter template for Nuxt 4 that prioritizes a clean and customizable base for your projects. Ready for 2025!
+### A no-nonsense minimal starter template for Nuxt 4 that prioritizes a clean and customizable base for your projects. Ready for 2026!
 [![Features](https://skillicons.dev/icons?i=nuxt,pinia,typescript,tailwind,supabase,bun)](https://nuxtya.tya.design/)
 
 ## Features 
