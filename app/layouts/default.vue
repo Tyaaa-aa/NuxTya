@@ -2,6 +2,7 @@
   <div>
     <Header />
     <slot />
+    <Footer />
   </div>
 </template>
 
@@ -9,6 +10,4 @@
 
 </script>
 
-<style>
-
-</style>
+<style></style>

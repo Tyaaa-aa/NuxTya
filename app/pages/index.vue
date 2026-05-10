@@ -8,7 +8,7 @@ import { useColorMode } from "#imports";
 const store = useCounterStore(); // Use the store
 const colorMode = useColorMode(); // Use color mode provided by nuxt-color-mode
 const toggleColorMode = () => (colorMode.preference = colorMode.preference === "dark" ? "light" : "dark");
-const title = ref<NuxtTya>({ msg: "Hello!" }); // Global interface and types can be found in the types folder
+const title = ref<NuxtTya>({ msg: "Welcome!" }); // Global interface and types can be found in the types folder
 const { data: serverMsg, error, status } = await useFetch("/api/hello"); // Fetch data from the server
 onMounted(() => {
 	if (error.value) {
@@ -22,7 +22,7 @@ onMounted(() => {
 <!-- NuxTya  -->
 <!-- You can remove this and start building your app -->
 <template>
-	<main class="w-screen h-screen grid place-items-center">
+	<main class="w-screen h-[calc(100vh-7rem)] max-w-screen-lg mx-auto grid place-items-center">
 		<div class="text-center">
 			<h1 class="text-4xl font-extrabold tracking-tight lg:text-5xl mb-5">
 				{{ title.msg }}
@@ -51,10 +51,8 @@ onMounted(() => {
 			</div>
 			<h2 class="text-2xl m-5 font-bold">Pinia</h2>
 			<div class="text-center">
-				<Button class="m-1" variant="secondary" @click="store.increment"
-					aria-label="Increment Count">Increment</Button>
-				<Button class="m-1" variant="outline" @click="store.decrement"
-					aria-label="Decrement Count">Decrement</Button>
+				<Button class="m-1" variant="secondary" @click="store.increment" aria-label="Increment Count">Increment</Button>
+				<Button class="m-1" variant="outline" @click="store.decrement" aria-label="Decrement Count">Decrement</Button>
 				<div class="flex flex-col">
 					<span class="text-2xl">Count: {{ store.count }}</span>
 					<span class="text-2xl">Double:{{ store.doubleCount }}</span>

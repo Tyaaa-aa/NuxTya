@@ -1,0 +1,10 @@
+{
+  "editor.formatOnSave": true,
+  "editor.tabSize": 2,
+  "files.exclude": {
+    "**/.nuxt": true,
+    "**/node_modules": true,
+    "**/.output": true,
+    "**/.vercel": true
+  },
+}

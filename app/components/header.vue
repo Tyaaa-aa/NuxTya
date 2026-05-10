@@ -1,12 +1,10 @@
 <template>
   <div>
-    <main class="w-screen max-w-screen-lg h-0 overflow-visible mx-auto pt-6 grid place-items-center">
-      <div class="text-center">
-        <h1 class="text-2xl font-extrabold tracking-tight lg:text-3xl mb-5">
-          <NuxtLink to="/">NuxTya</NuxtLink>
-        </h1>
-      </div>
-    </main>
+    <header class="max-w-screen-lg mx-auto text-center mt-10">
+      <h1 class="text-2xl font-extrabold lg:text-3xl m-0">
+        <NuxtLink to="/">NuxTya</NuxtLink>
+      </h1>
+    </header>
   </div>
 </template>
 

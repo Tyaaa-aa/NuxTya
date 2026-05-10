@@ -1,7 +1,7 @@
 <script setup lang="ts">
 useHead({
 	bodyAttrs: {
-		class: "nuxt-tya",
+		class: "nuxtya",
 	},
 	link: [{ rel: "icon", type: "image/x-icon", href: "/favicon.svg" }],
 });

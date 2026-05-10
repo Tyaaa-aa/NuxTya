@@ -25,7 +25,7 @@ useSeoMeta({
 
 useHead({
 	bodyAttrs: {
-		class: "nuxt-tya",
+		class: "nuxtya",
 	},
 	link: [{ rel: "icon", type: "image/x-icon", href: "/favicon.svg" }],
 });
@@ -33,7 +33,7 @@ useHead({
 
 <template>
 	<NuxtLayout>
-		<main class="flex flex-col items-center justify-center min-h-screen">
+		<main class="flex flex-col items-center justify-center w-screen h-[calc(100vh-7rem)] max-w-screen-lg mx-auto">
 			<h1 class="text-4xl font-bold text-red-500 mb-4">
 				Error {{ error?.status }} :(
 			</h1>
