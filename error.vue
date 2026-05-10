@@ -19,11 +19,11 @@
 		ogTitle: title.value,
 		twitterTitle: title.value,
 		twitterDescription:
-			"A Nuxt 3 starter template with TypeScript, Tailwind CSS, Shadcn-vue and Pinia.",
+			"A Nuxt 4 starter template with TypeScript, Tailwind CSS, Shadcn-vue and Pinia.",
 		description:
-			"A Nuxt 3 starter template with TypeScript, Tailwind CSS, Shadcn-vue and Pinia.",
+			"A Nuxt 4 starter template with TypeScript, Tailwind CSS, Shadcn-vue and Pinia.",
 		ogDescription:
-			"A Nuxt 3 starter template with TypeScript, Tailwind CSS, Shadcn-vue and Pinia.",
+			"A Nuxt 4 starter template with TypeScript, Tailwind CSS, Shadcn-vue and Pinia.",
 		ogImage: "/favicon.svg",
 		twitterImage: "/favicon.svg",
 		ogUrl: "https://localhost:3000",
@@ -34,9 +34,9 @@
 		title: title.value,
 		meta: [
 			{
-				name: "NuxTya | Nuxt 3 Starter Template",
+				name: "NuxTya | Nuxt 4 Starter Template",
 				content:
-					"A Nuxt 3 starter template with TypeScript, Tailwind CSS, Shadcn-vue and Pinia.",
+					"A Nuxt 4 starter template with TypeScript, Tailwind CSS, Shadcn-vue and Pinia.",
 			},
 		],
 		bodyAttrs: {

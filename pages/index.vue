@@ -1,4 +1,6 @@
 <script setup lang="ts">
+	import 'vue-sonner/style.css'
+	import { Toaster } from '@/components/ui/sonner'
 	import { toast } from 'vue-sonner'
 	import { useCounterStore } from "@/stores/counter"; // You can make stores in the stores folder
 	const store = useCounterStore(); // Use the store
@@ -13,7 +15,7 @@
 	});
 </script>
 <!-- This is a boilerplate to show all the features this starter template has to offer -->
-<!-- NuxTya is a minimal Nuxt 3 starter template that gets you started with the basics and sensible defaults -->
+<!-- NuxTya is a minimal Nuxt 4 starter template that gets you started with the basics and sensible defaults -->
 <!-- It includes TypeScript, Tailwind CSS, Shadcn-vue, Pinia, and more -->
 <!-- NuxTya  -->
 <!-- You can remove this and start building your app -->

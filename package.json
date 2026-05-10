@@ -1,6 +1,6 @@
 {
   "name": "nuxtya",
-  "description": "A Nuxt 3 starter template with TypeScript, Tailwind CSS, Shadcn-vue and Pinia.",
+  "description": "A Nuxt 4 starter template with TypeScript, Tailwind CSS, Shadcn-vue and Pinia.",
   "private": true,
   "type": "module",
   "scripts": {
@@ -13,19 +13,20 @@
   "dependencies": {
     "@nuxtjs/tailwindcss": "^6.14.0",
     "@pinia/nuxt": "^0.5.5",
+    "@tanstack/vue-table": "^8.21.3",
+    "@vueuse/core": "^14.3.0",
     "class-variance-authority": "^0.7.1",
     "clsx": "^2.1.1",
     "lucide-vue-next": "^0.378.0",
-    "nuxt": "^3.21.4",
+    "nuxt": "^4.4.4",
     "nuxt-security": "latest",
-    "radix-vue": "^1.9.17",
     "reka-ui": "^2.9.7",
     "shadcn-nuxt": "latest",
     "tailwind-merge": "^3.6.0",
     "tailwindcss-animate": "^1.0.7",
     "vue": "^3.5.34",
     "vue-router": "^4.6.4",
-    "vue-sonner": "^1.3.2"
+    "vue-sonner": "^2.0.9"
   },
   "devDependencies": {
     "@iconify-json/radix-icons": "^1.2.6",

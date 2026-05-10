@@ -1,3 +1,3 @@
 export default defineEventHandler((event) => {
-  return 'A Nuxt 3 Template'
+  return 'A Nuxt 4 Template'
 })

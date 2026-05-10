@@ -3,9 +3,9 @@
 		title: "NuxTya",
 		meta: [
 			{
-				name: "NuxTya | Nuxt 3 Starter Template",
+				name: "NuxTya | Nuxt 4 Starter Template",
 				content:
-					"A Nuxt 3 starter template with TypeScript, Tailwind CSS, Shadcn-vue and Pinia.",
+					"A Nuxt 4 starter template with TypeScript, Tailwind CSS, Shadcn-vue and Pinia.",
 			},
 		],
 		bodyAttrs: {

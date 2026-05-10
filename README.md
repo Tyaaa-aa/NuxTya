@@ -1,7 +1,7 @@
 
 # NuxTya
 
-### A no-nonsense minimal starter template for Nuxt 3 that prioritizes a clean and customizable base for your projects. Ready for 2025!
+### A no-nonsense minimal starter template for Nuxt 4 that prioritizes a clean and customizable base for your projects. Ready for 2025!
 [![Features](https://skillicons.dev/icons?i=nuxt,pinia,typescript,tailwind,supabase,bun)](https://nuxtya.tya.design/)
 
 ## Features 
@@ -15,9 +15,9 @@
 
 ## Getting Started
 
-This starter template provides a clean foundation for your Nuxt 3 projects. Because of Nuxt's modularity you can remove any unwanted features and customize it to fit your specific needs.
+This starter template provides a clean foundation for your Nuxt 4 projects. Because of Nuxt's modularity you can remove any unwanted features and customize it to fit your specific needs.
 
-Look at the [Nuxt 3 documentation](https://nuxt.com/docs/getting-started/introduction) to learn more about Nuxt 3 and its features.
+Look at the [Nuxt 4 documentation](https://nuxt.com/docs/getting-started/introduction) to learn more about Nuxt 4 and its features.
 
 **Here's a quick guide to get you started:**
 
@@ -25,7 +25,7 @@ Look at the [Nuxt 3 documentation](https://nuxt.com/docs/getting-started/introdu
 2.  **Clone the repository:** Clone this repository or download the zip file.
 4.  **Install dependencies:** Run the appropriate installation command based on your package manager (npm, pnpm, yarn, or bun).
 6.  **Start the development server:** Run the development server command to start the application locally on `http://localhost:3000`.
-8.  **Customize and develop:** Remove any unwanted features or components and start building your application using Nuxt 3 functionalities.
+8.  **Customize and develop:** Remove any unwanted features or components and start building your application using Nuxt 4 functionalities.
 
 **Remember:** This is a minimal starter template. Feel free to add additional features and functionalities as needed for your project.
 
@@ -108,7 +108,7 @@ bunx --bun shadcn-vue@latest add <COMPONENT_NAME e.g: Slider>
 
 ```
 
-Check out the [deployment documentation](https://nuxt.com/docs/getting-started/deployment) for more information on deploying your Nuxt 3 application.
+Check out the [deployment documentation](https://nuxt.com/docs/getting-started/deployment) for more information on deploying your Nuxt 4 application.
 
 See the [Shadcn-vue docs](https://www.shadcn-vue.com/docs/introduction.html) to see how to use it.
 
